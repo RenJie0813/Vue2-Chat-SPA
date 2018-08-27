@@ -1,0 +1,224 @@
+#app {
+  font-family:Microsoft YaHei,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Noto Sans CJK SC,WenQuanYi Micro Hei,Arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  overflow: hidden;
+  background: #bbb;
+
+}
+#box{
+  margin: 0 auto;
+  max-width: 750px;
+  min-width: 320px;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+#main{
+  position: relative;
+  background: #efeff4;
+  transition:350ms .1s ease;
+  transform: translate3d(0,0,0);
+}
+#main.hideLeft {
+  transform: translate3d(-100%,0,0);
+}
+.all-page{
+  position: absolute;
+  width: 100%;
+  height:100%;
+  top:0;
+  box-shadow: -2px 0 4px rgba(0,0,0,.3);
+}
+.second{
+  transform: translate3d(100%, 0, 0);
+  box-shadow: none;
+}
+.page{
+  width: 100%;
+  height:100%;
+  background-color: #efeff4;
+  text-align: left;
+}
+#container{
+  position: absolute;
+  top:.9rem;
+  bottom:0;
+  left:0;
+  right: 0;
+  transition: top .3s;
+  z-index: 9;
+  background-color: #efeff4;
+}
+#container.noTop{
+  top:0;
+}
+@font-face {
+  font-family: 'iconfont';  /* project id 609546 */
+  src: url('//at.alicdn.com/t/font_609546_kbyedlwawa8m2t9.eot');
+  src: url('//at.alicdn.com/t/font_609546_kbyedlwawa8m2t9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_609546_kbyedlwawa8m2t9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_609546_kbyedlwawa8m2t9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_609546_kbyedlwawa8m2t9.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:.54rem;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+#backIcon{
+  color:#FFF;
+  cursor: pointer;
+}
+.router-link-active{
+  color:rgb(9, 187, 7)!important;
+}
+.yd-tabbar:after{
+  z-index: 100;
+}
+.yd-btn-block{
+  height: .8rem;
+  cursor: pointer;
+}
+.yd-cell-item{
+  cursor: pointer;
+}
+.yd-cell:after{
+  bottom:-1px;
+  border-bottom: 1px solid #d9d9d9;
+}
+.button-div{
+  padding: 0 .8rem;
+}
+.choose>button+button{
+  margin-left: .5rem;
+}
+.rightAlign{
+  text-align: right;
+}
+.oneLine{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+/*过渡效果*/
+.animated {
+  animation-delay: .1s;
+  animation-duration: .3s;
+  animation-fill-mode: both;
+}
+
+.long-animated{
+  animation-delay: .1s;
+  animation-duration: .4s;
+  animation-fill-mode: both;
+}
+
+button,a{
+  cursor: pointer;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+  to {
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeOutLeft {
+  from {
+  }
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fadeOutLeft {
+  from {
+  }
+  to {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
+
+@-webkit-keyframes fadeOutRight {
+  from {
+  }
+  to {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+  }
+  to {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+}
+
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  animation-name: fadeOutRight;
+}
